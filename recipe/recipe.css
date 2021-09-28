@@ -26,3 +26,6 @@ body {
   padding: 0;
   background-image: url("images/background2.gif");
 }
+.title {
+  color: lemonchiffon;
+}

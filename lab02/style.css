@@ -30,9 +30,14 @@ a {
   color: inherit;
   text-decoration: none;
 }
-img {
-  width: 25%;
+.image {
+  width: 20%;
 }
 .movies-list > li {
   font-family: "Courier New", Courier, monospace;
+}
+.m1,
+.m2,
+.m3 {
+  color: red;
 }

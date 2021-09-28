@@ -16,6 +16,7 @@ em {
   background-color: #ffffa8;
 }
 .copyright-list {
+  font-family: monospace;
   display: inline-block;
 }
 .copyright-list > li {
@@ -24,16 +25,28 @@ em {
 body {
   margin: 0;
   padding: 0;
-  background-image: url("images/background.gif");
+  background-color: white;
+  color: #404040;
+  font-size: 11pt;
+  font-family: Georgia;
 }
 h1 {
-  font-size: 35px;
+  text-align: left;
+  font-size: 18pt;
   color: #a4a400;
   background-color: #f0f0f0;
   font-family: "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
     sans-serif;
+  text-decoration: underline;
 }
 h1.title {
+  font-size: 22pt;
+  font-weight: bold;
   text-align: center;
-  text-decoration: underline;
+}
+a {
+  color: #a4a400;
+}
+.cake {
+  text-decoration: line-through;
 }

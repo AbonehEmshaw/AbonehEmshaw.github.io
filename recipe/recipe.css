@@ -24,8 +24,16 @@ em {
 body {
   margin: 0;
   padding: 0;
-  background-image: url("images/background2.gif");
+  background-image: url("images/background.gif");
 }
-.title {
-  color: lemonchiffon;
+h1 {
+  font-size: 30px;
+  color: #a4a400;
+  background-color: #f0f0f0;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
+    sans-serif;
+}
+h1.title {
+  text-align: center;
+  text-decoration: underline;
 }

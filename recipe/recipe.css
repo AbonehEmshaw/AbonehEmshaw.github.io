@@ -51,3 +51,6 @@ a {
 .cake {
   text-decoration: line-through;
 }
+ul {
+  list-style-image: url("images/pie_bullet.png");
+}

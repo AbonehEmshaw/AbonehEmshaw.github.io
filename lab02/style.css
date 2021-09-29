@@ -22,7 +22,8 @@ h2 {
 }
 
 body {
-  size: 40px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
   background-color: #6d7072;
   color: white;
 }

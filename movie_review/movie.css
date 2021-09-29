@@ -26,6 +26,10 @@ header {
 }
 #main-section > h1 {
   text-align: center;
+  font-family: tahoma;
+  font-size: 24pt;
+  font-weight: bold;
+  text-shadow: #999999 3px 3px;
 }
 #main-section > div > aside {
   width: 25%;

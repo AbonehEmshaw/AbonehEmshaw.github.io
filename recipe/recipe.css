@@ -13,6 +13,7 @@ em {
   margin-left: 50px;
 }
 .comments-list > li > ul {
+  font-style: italic;
   background-color: #ffffa8;
 }
 .copyright-list {
@@ -49,4 +50,6 @@ a {
 }
 .cake {
   text-decoration: line-through;
+}
+section.bottom {
 }

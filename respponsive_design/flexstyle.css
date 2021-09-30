@@ -21,7 +21,7 @@ nav > p {
 #main {
   display: flex;
   flex-direction: row;
-  flex-flow: wrap;
+  flex-wrap: wrap;
 }
 #col1 {
   background-color: rgb(100, 99, 99);
@@ -61,20 +61,17 @@ footer {
     width: 33%;
     flex-grow: 1;
     order: 1;
-    background-color: rgb(100, 99, 99);
   }
   #col2 {
     height: 200px;
     width: 33%;
     flex-grow: 2;
     order: 3;
-    background-color: rgb(128, 126, 126);
   }
   #col3 {
     height: 200px;
     width: 33%;
     flex-grow: 1;
     order: 3;
-    background-color: rgb(161, 160, 160);
   }
 }

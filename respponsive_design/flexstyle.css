@@ -2,60 +2,52 @@ body {
   display: grid;
   grid-template-columns: auto;
 }
-
 header {
   background-color: aqua;
-  padding: 10px;
   text-align: center;
+  font-weight: bolder;
   font-size: 20px;
-  font-weight: bold;
 }
-
 nav {
-  background-color: #134242;
+  background-color: cadetblue;
   display: flex;
-  padding: 0;
 }
-
 nav > p {
+  color: cornsilk;
+  margin: 0px;
   padding: 10px;
-  border: solid 1px black;
-  margin: 0;
-  color: white;
+  border-right: black 1px solid;
 }
-
 #main {
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
 }
-
 #col1 {
+  background-color: rgb(100, 99, 99);
+  height: 200px;
   flex-grow: 1;
   order: 1;
-  background-color: gray;
-  height: 200px;
 }
-
 #col2 {
-  flex-grow: 3;
-  order: 3;
-  background-color: #e5e5e5;
+  background-color: rgb(128, 126, 126);
   height: 200px;
   width: 100%;
+  flex-grow: 3;
+  order: 3;
 }
-
 #col3 {
+  background-color: rgb(161, 160, 160);
+  height: 200px;
   flex-grow: 1;
   order: 2;
-  background-color: #a9a9a9;
-  height: 200px;
 }
-
 footer {
-  background-color: #134242;
+  color: white;
+  font-weight: bold;
+  background-color: cadetblue;
   text-align: center;
-  padding: 10px;
+  font-size: 20px;
 }
 
 @media screen and (min-width: 600px) {
@@ -64,24 +56,25 @@ footer {
     flex-direction: row;
     flex-flow: wrap;
   }
-
   #col1 {
+    height: 200px;
+    width: 33%;
     flex-grow: 1;
     order: 1;
-    height: 400px;
-    width: 33%;
+    background-color: rgb(100, 99, 99);
   }
-
   #col2 {
-    flex-grow: 1;
-    order: 2;
-    height: 400px;
+    height: 200px;
     width: 33%;
+    flex-grow: 2;
+    order: 3;
+    background-color: rgb(128, 126, 126);
   }
-
   #col3 {
-    height: 400px;
-    flex-grow: 1;
+    height: 200px;
     width: 33%;
+    flex-grow: 1;
+    order: 3;
+    background-color: rgb(161, 160, 160);
   }
 }

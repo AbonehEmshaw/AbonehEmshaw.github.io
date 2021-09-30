@@ -54,7 +54,7 @@ footer {
   #main {
     display: flex;
     flex-direction: row;
-    flex-flow: wrap;
+    flex-wrap: wrap;
   }
   #col1 {
     height: 200px;

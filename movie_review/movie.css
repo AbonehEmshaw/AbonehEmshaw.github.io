@@ -40,15 +40,15 @@ header {
   width: 75%;
 }
 #main-body > .main-body-header {
-  background-image: url("rbg.png");
+  background-image: url("images/rbg.png");
   background-repeat: repeat-x;
   font-size: 50px;
-  color: Red;
+  color: red;
   font-weight: bold;
 }
 #all-comments {
   column-count: 2;
-  background-image: url("background.png");
+  background-image: url("images/background.png");
   overflow: auto;
 }
 #main-body > div > img {

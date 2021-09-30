@@ -33,7 +33,7 @@ nav > p {
   background-color: rgb(128, 126, 126);
   height: 200px;
   width: 100%;
-  flex-grow: 3;
+  flex-grow: 2;
   order: 3;
 }
 #col3 {

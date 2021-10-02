@@ -83,7 +83,7 @@ function findLongestWords(k,words){
     return newWords;
 };
 
-console.log("Expected output of findLongestWords(['Aboneh', 'Ab', 'Manyazewal']) is ['Aboneh', 'Manyazewal'] " + myTestFunctionArrays(["Aboneh", "Manyazewal"], myTestFunctionArrays(3, ['Aboneh', 'Ab', 'Manyazewal'])));
+console.log("Expected output of findLongestWords(['Aboneh', 'Ab', 'Manyazewal']) is ['Aboneh', 'Manyazewal'] " + myTestFunctionArrays(["Aboneh", "Manyazewal"], findLongestWords(3, ['Aboneh', 'Ab', 'Manyazewal'])));
 
 //Modify the jsfiddle on the map/filter/reduce slide
 const a = [1,3,5,3,3]; 
@@ -107,6 +107,7 @@ document.writeln("The product of all elements: " + product.toString());
 
 //Test functions
 // test function
+
 function myFunctionTest(expected, found){
     if(expected===found){
         return "TEST SUCCEEDED";

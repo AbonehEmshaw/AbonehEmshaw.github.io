@@ -8,7 +8,7 @@ function max(a,b){
     }
 };
 console.log("Expected output of max(20,50) is 50 " + myFunctionTest(50,max(20,50)));
-console.log("Expected output of max(20,50) is 50 " + myFunctionTest(20,max(20,50)));
+console.log("Expected output of max(20,50) " + myFunctionTest(20,max(20,50)));
 
 //maximum of three numbers 
 function maxOfThree(a, b, c){
@@ -49,7 +49,7 @@ function multuply(num){
     return result;
 };
 
-console.log("Expected output of sum([1,2,3,4,5]) is 120 " + myFunctionTest(120, multuply([1,2,3,4,5])));
+console.log("Expected output of multiply([1,2,3,4,5]) is 120 " + myFunctionTest(120, multuply([1,2,3,4,5])));
 
 //reverse string 
 function reverse(str){
@@ -69,8 +69,8 @@ function findLongestWord(words){
     return length;
 };
 
-console.log("Expected output of findLongestWord(['Manyazewal', 'Ab', 'Aboneh']) is 6 " + myFunctionTest(6, findLongestWord(['Manyazewal', 'Ab', 'Aboneh'])));
-console.log("Expected output of findLongestWord(['Manyazewal', 'Ab', 'Aboneh']) is 6 " + myFunctionTest(10, findLongestWord(['Manyazewal', 'Ab', 'Aboneh'])));
+console.log("Expected output of findLongestWord(['Manyazewal', 'Ab', 'Aboneh']) " + myFunctionTest(6, findLongestWord(['Manyazewal', 'Ab', 'Aboneh'])));
+console.log("Expected output of findLongestWord(['Manyazewal', 'Ab', 'Aboneh']) is 10 " + myFunctionTest(10, findLongestWord(['Manyazewal', 'Ab', 'Aboneh'])));
 
 //function find Longest Words 
 function findLongestWords(k,words){

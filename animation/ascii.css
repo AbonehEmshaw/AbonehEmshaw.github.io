@@ -1,5 +1,6 @@
 body {
-  background-color: #9e9eb4;
+  background-image: url("images/final.jpg");
+  /* background-color: #9e9eb4; */
   font: bold 14pt sans-serif;
   display: flex;
   flex-direction: column;
@@ -7,7 +8,7 @@ body {
   justify-content: center;
 }
 h1 {
-  text-shadow: blanchedalmond 4px 4px;
+  text-shadow: rgb(75, 72, 69) 4px 4px;
 }
 
 button {

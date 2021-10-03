@@ -7,7 +7,7 @@ body {
   justify-content: center;
 }
 h1 {
-  text-shadow: blanchedalmond;
+  text-shadow: blanchedalmond 4px 4px;
 }
 
 button {

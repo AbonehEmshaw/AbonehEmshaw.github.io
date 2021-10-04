@@ -1,11 +1,11 @@
 describe("Sum", function () {
     it("Sums all the numbers in the Array ", function () {
-      assert.equal(10, sum(1, 2, 3, 4));
+      assert.equal(21, sum(1, 7, 3, 10));
     });
   });
   describe("Multiply", function () {
     it("Multiplies all the numbers in the Array", function () {
-      assert.equal(6, multiply(1, 2, 3));
+      assert.equal(16, multiply(2, 2, 4));
     });
   });
   describe("Reverse", function () {

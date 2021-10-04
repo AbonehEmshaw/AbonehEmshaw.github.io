@@ -39,19 +39,52 @@ input[type="password"] {
   border-radius: 4px;
   border: solid 1px grey;
 }
-input[type="submit"] {
-  font-size: 26px;
-  padding: 10px;
-  border-radius: 4px;
-  background-color: dodgerblue;
-  border-width: 0;
-  color: white;
-}
+
 #main-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "leftcon rightcon"
+    "bottomcon bottomcon ";
   padding: 0 50px;
 }
 h1 {
   padding: 0 50px;
+}
+#left-container {
+  grid-area: leftcon;
+}
+#right-container {
+  grid-area: rightcon;
+}
+#bottomcon {
+  grid-area: bottomcon;
+  position: absolute;
+  right: 60px;
+  bottom: 200px;
+}
+#product {
+  color: #0099cc;
+  background-color: transparent;
+  font-size: 20px px;
+  padding: 10px 20px;
+  border: 2px solid #0099cc;
+  border-radius: 4px;
+  margin-left: 20px;
+}
+#cancel {
+  color: red;
+  background-color: transparent;
+  font-size: 20px px;
+  padding: 10px 20px;
+  border: 2px solid red;
+  border-radius: 4px;
+  margin-left: 20px;
+}
+#reset {
+  color: #022936;
+  background-color: transparent;
+  font-size: 30px px;
+  padding: 10px 20px;
+  border: 2px solid #022936;
+  border-radius: 4px;
 }

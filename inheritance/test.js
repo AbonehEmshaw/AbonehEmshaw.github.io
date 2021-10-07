@@ -23,8 +23,8 @@ describe("bubble sort",function(){
         let arg=[1,2,3,4,5];
         assert.deepEqual(arg.bubbleSort(),arg);
     })
-    it("should return 1,2,3,4 when given 4,3,2,1",function(){
-        let arg=[4,3,2,1];
+    it("should return 1,2,3,4 when given 4,2,3,1",function(){
+        let arg=[4,2,3,1];
         assert.deepEqual(arg.bubbleSort(),[1,2,3,4])
     })
 })

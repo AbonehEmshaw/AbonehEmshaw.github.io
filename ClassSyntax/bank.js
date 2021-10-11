@@ -8,7 +8,7 @@ class Bank {
   total() {
     return this._accounts.length;
   }
-  adAccount(number) {
+  addAccount(number) {
     this._accounts.push(new Account(number));
     return this._accounts.length;
   }

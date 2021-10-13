@@ -21,10 +21,11 @@ body {
   position: absolute;
 }
 #input-container {
-  display: flex;
-  justify-content: space-evenly;
+  position: fixed;
+  left: 0px;
+  right: 0px;
   padding: 10px;
-  z-index: 100;
+  padding-left: 50px;
   border-top: solid 1px black;
   background-color: #a1ece6;
 }
@@ -34,8 +35,10 @@ input {
 }
 button {
   background-color: rgb(2, 0, 128);
+  font-size: 20px;
   color: white;
   border: none;
   border-radius: 5px;
   padding: 2px 15px;
+  margin-left: 10px;
 }

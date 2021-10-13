@@ -26,14 +26,14 @@ body {
   padding: 10px;
   z-index: 100;
   border-top: solid 1px black;
-  background-color: cornflowerblue;
+  background-color: #a1ece6;
 }
 input {
   font-size: 18px;
   border-radius: 4px;
 }
 button {
-  background-color: teal;
+  background-color: rgb(2, 0, 128);
   color: white;
   border: none;
   border-radius: 5px;

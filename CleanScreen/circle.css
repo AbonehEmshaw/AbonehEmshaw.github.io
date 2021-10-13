@@ -42,3 +42,12 @@ button {
   padding: 2px 15px;
   margin-left: 10px;
 }
+input {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  opacity: 5;
+  /* -webkit-appearance: "Always Show Up/Down Arrows"; */
+}

@@ -1,5 +1,5 @@
 const car = require('./my_car');
 
 car.drive();
-car.turn();
+car.turn('90 degrees');
 car.break();

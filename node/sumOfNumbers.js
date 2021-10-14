@@ -5,7 +5,7 @@ const readLine = require('readline').createInterface({
 
 function getNumber(sum = 0){
     readLine.question('Enter a number? ', num =>{
-        if(num.toLocaleLowerCase() === 'stop'){
+        if(num.toUpperCase() === 'STOP'){
             console.log(`Sum of the numbers is: ${sum}`);
             readLine.close();    
         }else{

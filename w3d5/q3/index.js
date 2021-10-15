@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
     let response="<!DOCTYPE html>"+
     "<html>"+
         "<head>"+
-            "<title> Express App</title>"+
+            "<title>My Express App</title>"+
             `<link href="${hour >= 6 && hour <=18 ?'/css/day.css':'/css/night.css'}" rel="stylesheet">`+
         "</head>"+
         "<body>"+

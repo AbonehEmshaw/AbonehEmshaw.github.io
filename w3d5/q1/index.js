@@ -7,7 +7,7 @@ app.get('/', (req, res) => {
         name = "person";
     }
     if(!age){
-        age="unknow";
+        age="unknown";
     }
     res.send(`Welcome ${name} with age ${age}`);
 });

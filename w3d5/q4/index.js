@@ -2,6 +2,8 @@ const express = require('express');
 const path=require("path");
 const app = express();
 
+app.use('/result',express.urlencoded({extended:false}));
+
 app.get('/', (req, res) => {
     const date=new Date();
     const hour=date.getHours();
@@ -10,7 +12,7 @@ app.get('/', (req, res) => {
     "<html>"+
         "<head>"+
             "<title>My Express App</title>"+
-            `<link href="${hour >= 6 && hour <=18 ?'/css/day.css':'/css/night.css'}" rel="stylesheet">`+
+            `<link href="${hour >= 6 && hour <=18 ? '/css/day.css':'/css/night.css'}" rel="stylesheet">`+
         "</head>"+
         "<body>"+
             "<form action='/result' method='POST'>"+
@@ -21,6 +23,20 @@ app.get('/', (req, res) => {
         "</body>"+
     "</html>";
     res.send(response);
+});
+app.post('/result',(req,res)=>{
+    res.redirect(`/output?name=${req.body.name}&age=${req.body.age}`);
+});
+app.get('/output', (req, res) => {
+    let name = req.query.name;
+    let age = req.query.age;
+    if (!name) {
+        name = "person";
+    }
+    if(!age){
+        age="unknown";
+    }
+    res.send(`Welcome ${name} with age ${age}`);
 });
 app.use('/css', express.static(path.join(__dirname, 'css')));
 app.listen(3000);

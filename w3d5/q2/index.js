@@ -6,7 +6,7 @@ app.get('/', (req, res) => {
     let response="<!DOCTYPE html>"+
     "<html>"+
         "<head>"+
-            "<title> Express App</title>"+
+            "<title>My Express App</title>"+
         "</head>"+
         "<body>"+
             "<form action='/result' method='POST'>"+

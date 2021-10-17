@@ -9,14 +9,16 @@
 <body>
     <div class="container">
         <% for(var i=0; i<data.details.length; i++) {%>
-            <li>
-                ID: <%= data.details[i].id %>, Name: <%= data.details[i].name %>, Description: <%= data.details[i].description %>, Price: <%= data.details[i].price %>
+               
+                <p>ID: <%= data.details[i].id %></p>
+                <p>Name: <%= data.details[i].name %></p>
+                <p>Description: <%= data.details[i].description %></p>
+                <p>Price: <%= data.details[i].price %></p>
                 <form action="/addToCart" method="post">
                     <input type="hidden" name="name" value="<%=data.details[i].name%>">
                     <input type="hidden" name="price" value="<%=data.details[i].price%>">
                     <button type="submit" value="">Add to Cart</button>
                 </form>
-            </li>
         <% } %>
 </body>
 </html>

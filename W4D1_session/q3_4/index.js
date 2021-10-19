@@ -35,13 +35,14 @@ app.get('/', (req, res) => {
 app.post('/addToCart', (req, res) => {
     let key=req.body.name;
     let price=req.body.price;
-    
+    let id = req.body.id;
     if(req.session[key]){
+        req.session[key].id = id;
         req.session[key].price +=parseInt(price);
         req.session[key].quantity +=1;
     }
     else{
-    let object={name: key,price:parseInt(price),quantity:1};
+    let object={id: id, name: key,price:parseInt(price),quantity:1};
     req.session[key]=object;
     console.log(req.session['cookie']);
     }

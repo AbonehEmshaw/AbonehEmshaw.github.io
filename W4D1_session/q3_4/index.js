@@ -8,16 +8,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'ejs');
 
 app.use(session({ secret: "salt" }));
-// app.use(session({
-//     resave:false,
-//     saveUninitialized:false,
-//     rolling:true,
-//     cookie:{
-//         httpOnly:true,
-//         maxAge:1000*60*60*24
-//     },
-//     secret:"salt"
-// }))
 
 const products = [
     { id: 1, name: 'product 1', description: "product description", price: 10},

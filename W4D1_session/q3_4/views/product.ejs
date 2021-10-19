@@ -1,17 +1,24 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8" />
-    <title>Product</title>
-  </head>
-  <body>
-    <h1><%= product.getName() %></h1>
-    <p>Description: <%= product.getDescription() %></p>
-    <p>Price: <%= product.getPrice()%> $</p>
-    <form action="/product/addtocart" method="POST">
-      <input type="hidden" name="productId" value="<%= product.getId() %>" />
-      <input type="submit" value="Add to cart" />
-    </form>
-    <p><a href="/cart">Show Cart</a></p>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product List</title>
+</head>
+<body>
+    <div class="container">
+        <% for(var i=0; i<data.details.length; i++) {%>
+               
+                <p>ID: <%= data.details[i].id %></p>
+                <p>Name: <%= data.details[i].name %></p>
+                <p>Description: <%= data.details[i].description %></p>
+                <p>Price: <%= data.details[i].price %></p>
+                <form action="/addToCart" method="post">
+                    <input type="hidden" name="name" value="<%=data.details[i].name%>">
+                    <input type="hidden" name="price" value="<%=data.details[i].price%>">
+                    <button type="submit" value="">Add to Cart</button>
+                </form>
+        <% } %>
+</body>
 </html>

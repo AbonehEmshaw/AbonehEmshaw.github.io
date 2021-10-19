@@ -4,7 +4,7 @@ const path = require("path");
 const app = express();
 
 app.use("/result", express.urlencoded({ extended: false }));
-app.use(session({ secret: "wapisfun" }));
+app.use(session({ secret: "salt" }));
 app.get("/", (req, res) => {
   const date = new Date();
   const hour = date.getHours();
